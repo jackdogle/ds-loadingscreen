@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARKNESS LOADING SCREEN</title>
+    <!-- Importing Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Wrapper -->
+    <div id="loading-container">
+        <!-- Particles -->
+        <div class="particles" id="particles-container"></div>
+        
+        <!-- Video Background Overlay -->
+        <div class="video-overlay"></div>
+        <div id="video-bg">
+            <!-- Video akan dimuat via config.js -->
+        </div>
+
+        <!-- Main Content (Staggered Animations) -->
+        <main class="content">
+            <!-- Header Section -->
+            <header class="header animate-up delay-1">
+                <h1 class="glow-text" data-text="DARKNESS">DARKNESS</h1>
+                <p class="tagline">ELITE ROLEPLAY COMMUNITY</p>
+            </header>
+
+            <!-- Loading Progress Section -->
+            <section class="loading-section animate-up delay-2">
+                <div class="progress-info">
+                    <span id="load-status">INITIALIZING SYSTEM...</span>
+                    <span id="load-percent">0%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="load-bar"></div>
+                </div>
+            </section>
+
+            <!-- Carousel Section -->
+            <section class="carousel animate-up delay-3">
+                <div id="carousel-content">
+                    <!-- Dinamis via app.js -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar / Bottom Controls -->
+        <footer class="footer animate-up delay-4">
+            <!-- Music Player -->
+            <div class="music-player">
+                <div class="eq-visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="music-info">
+                    <span id="current-song">NOW PLAYING</span>
+                </div>
+                <div class="controls">
+                    <button id="play-pause-btn">PAUSE</button>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
